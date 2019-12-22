@@ -25,6 +25,47 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+	ul.timeline {
+		list-style-type: none;
+		position: relative;
+		padding: 0px;
+	}
+	ul.timeline:before {
+		content: ' ';
+		background: #d4d9df;
+		display: inline-block;
+		position: absolute;
+		width: 2px;
+		height: 100%;
+		z-index: 400;
+	}
+	ul.timeline > li {
+		margin: 20px 0;
+		
+	}
+	ul.timeline > li:before {
+		content: ' ';
+		background: white;
+		display: inline-block;
+		position: relative;
+		margin-left: -15px;
+		border-radius: 50%;
+		border: 3px solid #22c0e8;
+		width: 20px;
+		height: 20px;
+		z-index: 400;
+	}
+.workHeader{
+	display: flex; 
+	justify-content: space-between;
+	margin-bottom: 5px;
+	margin-top: -25px;
+	margin-left: 15px;
+}
+.workDescript{
+	margin-left: 15px;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -245,7 +286,7 @@ input, select, textarea {
 
 	.container {
 		margin: 0 auto;
-		max-width: calc(100% - 4em);
+		max-width: calc(100% );
 		width: 100%;
 	}
 
@@ -2602,7 +2643,7 @@ input, select, textarea {
 		left: 0;
 		padding: 8em 4em;
 		position: fixed;
-		text-align: right;
+		text-align: left;
 		top: 0;
 		width: 35%;
 	}
@@ -2690,8 +2731,8 @@ input, select, textarea {
 
 		#main > section {
 			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
+			margin: 2em 0 0 0;
+			padding: 2em 0 0 0;
 		}
 
 			#main > section:first-child {
