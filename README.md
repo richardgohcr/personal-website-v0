@@ -1,2 +1,2 @@
-# richardgohcr.github.io
-My Portfolio Website
+# My First Quick and Simple Website Made with Simple HTML and CSS
+
